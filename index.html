@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wilshire Foot Spa | Foot Massage in Los Angeles</title>
+  <meta name="description" content="High‑end, relaxing foot massage and bodywork in the heart of Los Angeles. Open daily 10:30 AM – 10:00 PM.">
+  <meta property="og:title" content="Wilshire Foot Spa" />
+  <meta property="og:description" content="Premium foot massage & bodywork on Wilshire Blvd, Los Angeles." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://wilshirefootspa.net" />
+  <meta name="theme-color" content="#0b0b0b" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0b0b;        /* deep charcoal */
+      --panel:#111112;     /* slightly lighter */
+      --text:#E7E3D7;      /* warm ivory */
+      --muted:#B7B2A3;     /* muted ivory */
+      --gold:#C7A75B;      /* soft brushed gold */
+      --gold-2:#9C8044;    /* darker gold */
+      --accent:#e6cf8b;    /* highlight */
+      --radius:18px;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --max:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{opacity:.9}
+    .container{max-width:var(--max);margin:0 auto;padding:24px}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-2));display:grid;place-items:center;box-shadow:var(--shadow)}
+    .logo span{font-family:"Playfair Display",serif;font-weight:700;color:#151515;font-size:20px}
+    .brand h1{font-family:"Playfair Display",serif;font-size:22px;letter-spacing:.6px;margin:0}
+    .cta{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{padding:12px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.08);background:#151515;color:var(--text);box-shadow:var(--shadow)}
+    .btn.gold{background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#161616;border:none}
+    .btn.gold:hover{filter:brightness(1.02)}
+    /* Hero */
+    .hero{margin-top:8px;background:radial-gradient(1200px 500px at 50% -100px, rgba(199,167,91,.25), transparent), url('https://images.unsplash.com/photo-1604335399105-9c1b3c82e646?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat;border-radius:var(--radius);min-height:62vh;display:flex;align-items:end}
+    .hero .inner{backdrop-filter:saturate(120%) blur(1.5px);background:linear-gradient(180deg, rgba(0,0,0,.15), rgba(0,0,0,.65));padding:28px;border-radius:0 0 var(--radius) var(--radius);width:100%}
+    .kicker{color:var(--gold);text-transform:uppercase;letter-spacing:.18em;font-size:12px;margin-bottom:6px}
+    .title{font-family:"Playfair Display",serif;font-size:44px;line-height:1.08;margin:0 0 8px}
+    .subtitle{color:var(--muted);font-size:16px;max-width:760px;margin:0}
+
+    /* Cards */
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px;margin-top:28px}
+    .card{grid-column:span 6;background:var(--panel);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+    .card h3{font-family:"Playfair Display",serif;margin:0 0 8px;color:var(--accent);font-size:22px}
+    .muted{color:var(--muted)}
+    .list{margin:10px 0 0;padding-left:18px}
+    .chip{display:inline-block;border:1px solid rgba(255,255,255,.12);padding:8px 12px;border-radius:999px;margin-right:10px;margin-top:8px;color:var(--text)}
+
+    /* Map / Contact */
+    .contact{display:grid;grid-template-columns:repeat(12,1fr);gap:18px;margin-top:18px}
+    .map{grid-column:span 7;background:var(--panel);border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow)}
+    .map iframe{width:100%;height:380px;border:0}
+    .info{grid-column:span 5;background:linear-gradient(135deg,rgba(199,167,91,.12),rgba(0,0,0,.0));border:1px solid rgba(255,255,255,.06);border-radius:var(--radius);padding:22px;box-shadow:var(--shadow)}
+    .info h3{font-family:"Playfair Display",serif;margin:0 0 10px}
+
+    /* Footer */
+    footer{margin:40px 0 20px;color:#9a9586;font-size:13px;text-align:center}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .card{grid-column:span 12}
+      .map{grid-column:span 12}
+      .info{grid-column:span 12}
+      .title{font-size:34px}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthAndBeautyBusiness",
+    "name": "Wilshire Foot Spa",
+    "telephone": "+1-323-710-9486",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "6126 Wilshire Blvd",
+      "addressLocality": "Los Angeles",
+      "addressRegion": "CA",
+      "postalCode": "90048",
+      "addressCountry": "US"
+    },
+    "openingHours": "Mo-Su 10:30-22:00",
+    "image": "https://images.unsplash.com/photo-1604335399105-9c1b3c82e646?q=80&w=1920&auto=format&fit=crop",
+    "url": "https://wilshirefootspa.net"
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+      <div class="brand">
+        <div class="logo"><span>W</span></div>
+        <h1>Wilshire Foot Spa</h1>
+      </div>
+      <div class="cta">
+        <a class="btn" href=" ">Call: (323) 710‑9486</a >
+        <a class="btn gold" href="https://maps.app.goo.gl/JcujkMUDLoSZ0vJk9" target="_blank" rel="noopener">Get Directions</a >
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="inner">
+        <div class="kicker">Los Angeles · Wilshire Blvd</div>
+        <h2 class="title">Refined Foot Massage & Bodywork</h2>
+        <p class="subtitle">A quiet, elegant sanctuary in the heart of LA. Professional therapists, clean and calming space, and genuine care—open daily 10:30 AM – 10:00 PM.</p >
+      </div>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <h3>Our Services</h3>
+        <p class="muted">Popular selections (sample pricing — edit anytime):</p >
+        <ul class="list">
+          <li>Foot Massage · 30 / 60 / 90 min</li>
+          <li>Combo (Foot + Neck/Back) · 60 / 90 min</li>
+          <li>Bodywork · 60 / 90 min</li>
+          <li>Couples Session · 60 / 90 min</li>
+        </ul>
+        <div style="margin-top:10px">
+          <span class="chip">Walk‑ins Welcome</span>
+          <span class="chip">Gift Cards Available</span>
+          <span class="chip">Clean · Quiet · Relaxing</span>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Hours</h3>
+        <p class="muted">Open daily</p >
+        <ul class="list">
+          <li>Mon – Sun: 10:30 AM – 10:00 PM</li>
+        </ul>
+        <div style="margin-top:12px">
+          <a class="btn gold" href="tel:+13237109486">Book by Phone</a >
+        </div>
+      </article>
+    </section>
+
+    <section class="contact">
+      <div class="map">
+        <iframe loading="lazy" allowfullscreen
+          src="https://www.google.com/maps?q=6126%20Wilshire%20Blvd%2C%20Los%20Angeles%2C%20CA%2090048&output=embed"></iframe>
+      </div>
+      <aside class="info">
+        <h3>Visit Us</h3>
+        <p style="margin:6px 0 10px" class="muted">
+          6126 Wilshire Blvd, Los Angeles, CA 90048
+        </p >
+        <p style="margin:0 0 6px"><strong>Phone:</strong> <a href="tel:+13237109486">(323) 710‑9486</a ></p >
+        <p style="margin:0 0 18px"><strong>Parking:</strong> Street & nearby lots</p >
+        <div class="cta">
+          <a class="btn" href="sms:+13237109486">Text Us</a >
+          <a class="btn gold" href="https://maps.app.goo.gl/JcujkMUDLoSZ0vJk9" target="_blank" rel="noopener">Open in Google Maps</a >
+        </div>
+      </aside>
+    </section>
+
+    <footer>
+      © <span id="y"></span> Wilshire Foot Spa · All rights reserved
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
