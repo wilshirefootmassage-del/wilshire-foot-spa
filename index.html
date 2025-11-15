@@ -40,7 +40,7 @@
     .btn.gold{background:linear-gradient(135deg,var(--gold),var(--gold-2));color:#161616;border:none}
     .btn.gold:hover{filter:brightness(1.02)}
     /* Hero */
-    .hero{margin-top:8px;background:radial-gradient(1200px 500px at 50% -100px, rgba(199,167,91,.25), transparent), url('https://images.unsplash.com/photo-1604335399105-9c1b3c82e646?q=80&w=1920&auto=format&fit=crop') center/cover no-repeat;border-radius:var(--radius);min-height:62vh;display:flex;align-items:end}
+    .hero {width: 100%;height: 350px;overflow: hidden; border-radius: 12px;}
     .hero .inner{backdrop-filter:saturate(120%) blur(1.5px);background:linear-gradient(180deg, rgba(0,0,0,.15), rgba(0,0,0,.65));padding:28px;border-radius:0 0 var(--radius) var(--radius);width:100%}
     .kicker{color:var(--gold);text-transform:uppercase;letter-spacing:.18em;font-size:12px;margin-bottom:6px}
     .title{font-family:"Playfair Display",serif;font-size:44px;line-height:1.08;margin:0 0 8px}
@@ -105,13 +105,15 @@
       </div>
     </nav>
 
-    <header class="hero">
-      <div class="inner">
-        <div class="kicker">Los Angeles · Wilshire Blvd</div>
-        <h2 class="title">Refined Foot Massage & Bodywork</h2>
-        <p class="subtitle">A quiet, elegant sanctuary in the heart of LA. Professional therapists, clean and calming space, and genuine care—open daily 10:30 AM – 10:00 PM.</p >
-      </div>
-    </header>
+   <header class="hero">
+  <div class="carousel-container">
+    <div class="carousel">
+      < img src="images/img1.jpg" class="carousel-item">
+      < img src="images/img2.jpg" class="carousel-item">
+      < img src="images/img3.jpg" class="carousel-item">
+    </div>
+  </div>
+</header>
 
     <section class="grid">
       <article class="card">
