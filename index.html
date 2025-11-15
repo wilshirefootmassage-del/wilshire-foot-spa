@@ -78,6 +78,17 @@
       --max:1100px;
     }
 }
+      /* Remove inner spacing of hero content */
+       header.hero .inner {
+       margin: 0 !important;
+       padding: 0 !important;
+    }
+
+    /* Ensure image slider and hero connect without gap */
+      section.top-slider {
+      margin-bottom: 0 !important;
+      padding-bottom: 0 !important;
+    }
     *{box-sizing:border-box}
     html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
     a{color:var(--accent);text-decoration:none}
@@ -124,38 +135,8 @@
       .info{grid-column:span 12}
       .title{font-size:34px}
     }
-  /* 移除轮播图与下方文字之间多余空隙 */
-.top-slider {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-}
-
-.hero {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-}
-
-.hero .inner {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-}
-    /* Remove extra spacing above HERO section */
-header.hero {
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-/* Remove inner spacing of hero content */
-header.hero .inner {
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-/* Ensure image slider and hero connect without gap */
-section.top-slider {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-}
+    
+  
   </style>
   <script type="application/ld+json">
   {
